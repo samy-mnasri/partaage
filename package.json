@@ -1,0 +1,13 @@
+{
+  "name": "paartage",
+  "version": "1.0.0",
+  "repository": "https://github.com/samy-mnasri/partaage.git",
+  "author": "Samy M'Nasri <samy.mnasri@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "vercel": "vercel dev"
+  },
+  "devDependencies": {
+    "vercel": "^19.2.0"
+  }
+}
