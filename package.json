@@ -8,6 +8,7 @@
     "vercel": "vercel dev"
   },
   "devDependencies": {
+    "standard": "^14.3.4",
     "vercel": "^19.2.0"
   }
 }
