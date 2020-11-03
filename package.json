@@ -5,10 +5,16 @@
   "author": "Samy M'Nasri <samy.mnasri@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "vercel": "vercel dev"
+    "start": "micro -l tcp://0.0.0.0:${PORT-3000}"
   },
   "devDependencies": {
     "standard": "^14.3.4",
     "vercel": "^19.2.0"
+  },
+  "dependencies": {
+    "@turf/turf": "^5.1.6",
+    "axios": "^0.21.0",
+    "micro": "^9.3.4",
+    "micro-query": "^0.3.0"
   }
 }

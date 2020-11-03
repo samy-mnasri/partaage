@@ -1,8 +1,11 @@
 const axios = require('axios')
+const query = require('micro-query')
 const turf = require('@turf/turf')
 
 module.exports = async (req, res) => {
-  const cities = req.query.cities.split(',')
+  let { cities } = query(req)
+  cities = cities.split(',')
+  console.log(cities)
   const geojsons = []
   let union
 
@@ -38,5 +41,5 @@ module.exports = async (req, res) => {
     }
   }
 
-  res.json(union)
+  res.end(JSON.stringify(union))
 }

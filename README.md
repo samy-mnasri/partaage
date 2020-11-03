@@ -1,7 +1,7 @@
 # PARTAAGE
 
-This tool creates a merged GeoJSON document of multiple French cities according to their INSEE code (and thanks to geo.api.gouv.fr).
+Cet outil génère un document GeoJSON de la fusion de plusieurs villes françaises d'après leurs codes INSEE (via geo.api.gouv.fr).
 
-To use it, send a GET request to https://partaage.vercel.app/api and set the query parameter "cities" to a list of INSEE codes separated by ",".
+Pour l'utiliser, envoyer une requête GET à https://partaage.vercel.app/api en définissant le paramètre "cities" comme une liste de codes INSEE séparés par ",".
 
-Example: https://partaage.vercel.app/api?cities=67062,67063
+Exemple : https://partaage.vercel.app/api?cities=67062,67063
