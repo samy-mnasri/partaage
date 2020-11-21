@@ -4,7 +4,7 @@ const turf = require('@turf/turf')
 
 module.exports = async (req, res) => {
   let { cities } = query(req)
-  cities = cities.split(',')
+  cities = (cities || '').split(',')
   console.log(cities)
   const geojsons = []
   let union
